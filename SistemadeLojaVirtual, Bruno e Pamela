@@ -18,12 +18,8 @@ RF2.4 - Permitir que o cliente visualize as fotos e vídeos dos produtos - Alta
 RF3 - Compra de produtos - Alta
 RF3.1 - Permitir que o usuário adicione produtos ao carrinho de compras - Alta
 RF3.2 - Permitir que o cliente ao escolher o produto defina: Tamanho, cor, quantidades, além de visualizar valor do produto e estimativa de frete - Alta
-RF3.3 - Permitir o cálculo autómatico do valor de frete em compras abaixo de R$200,00 - Alta
-RF3.4 - Permitir que o cliente selecione a opção de frete grátis em compras a partir de R$200,01- Alta
-RF3.5 - Permitir que o cliente realize a troca do produto em até 7 dias após a entrega - Alta
-RF3.6 - Permitir que o cliente realize a devolução do produto em até 7 dias após a entrega caso tenha algum problema, sendo assim, o frete será custeado pela empresa - Alta
-RF3.7 - Permitir que o cliente visualize qual o status de envio do pedido após a compra - Alta
-RF3.8 - Permitir que o cliente selecione a forma de pagamento (Pix, cartão de débito ou crédito e boleto) - Alta
+RF3.3 - Permitir que o cliente visualize qual o status de envio do pedido após a compra - Alta
+RF3.4 - Permitir que o cliente selecione a forma de pagamento (Pix, cartão de débito ou crédito e boleto) - Alta
 
 RF4 - Admin (Back-End) - Alta
 RF4.1 - Permitir que administradores realizem alterações no catálogo dos produtos (Quantidades disponíveis, preço, opções de tamanho e cor) - Alta
@@ -71,4 +67,14 @@ RN1.1 - Todas as transações de compra registradas devem ter um identificador �
 RN2 - Regra de Elegibilidade do Usuário - Alta
 RN2.1 - Os seguintes itens devem ter o preenchimento obrigatório: Nome completo, CPF, Email, Telefone (Celular), Endereço, CEP, Cidade, Estado e bairro. - Alta
 
-RN
+RN3 - Regra de Elegibilidade de Frete Grátis - Alta
+RN3.1 - Cliente cujo carrinho de compras não ultrapasse o valor de R$200,00 , será cobrado o valor do frete que será calculado automaticamente o valor de envio e estimativa de entrega, utilizando as informações de endereço do cliente. - Alta
+RN3.2 - Cliente cujo carrinho de compras ultrapasse o valor de R$200,01 , terá direito a frete grátis - Alta
+
+RN4 - Regra de Elegibilidade de Troca/Devolução de produto - Alta
+RN4.1 - Cliente que queira trocar seu produto só conseguirá realizá-lo caso não tenha passado 7 dias úteis após a entrega. - Alta
+RN4.2 - Cliente que queira realizar a devolução de seu produto só poderá realizá-lo caso não tenha passado 7 dias úteis após a entrega e caso comprovada insatisfação com erro da empresa (frete custeado pela empresa). - Alta
+
+RN5 - Regra de Notificações de compras - Alta
+RN5.1 - Cliente poderá optar por receber atualizações de suas compras em seu email - Alta
+RN5.2 - Cliente poderá optar por receber informações sobre produtos da loja em seu email - Média
