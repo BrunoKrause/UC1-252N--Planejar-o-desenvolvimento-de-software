@@ -1,0 +1,74 @@
+Requisitos
+
+Descrição do Propósito do Sistema: O aplicativo BeluStore visa profissionalizar as vendas da loja, possibilitando uma maior praticidade na hora do cliente comprar, podendo selecionar tamanho, cor, tipo de peça e entre outras coisas.
+
+Requisitos Funcionais
+
+RF1 - Cadastro e Perfil de Usuário - Alta
+RF1.1 - Permitir o cadastro de novos usuários com nome, idade, e-mail,senha, cpf, data de nascimento, telefone(Celular), endereço detalhado (CEP, rua, número, complemento, estado, cidade, bairro, complemento)- Alta
+RF1.2 - Permitir ao usuário visualizar e editar seus dados de perfil. - Alta
+RF1.3 - Permitir que o usuário visualize o seu histórico de pedidos (Mostrando valores, data do pedido e data de entrega) - Médio
+
+RF2 - Catálogo de produtos - Alta
+RF2.1 - Permitir que o usuário navegue entre as categorias - Alta
+RF2.2 - Permitir que o usuário ao realizar a busca de um produto filtre por: Relevância, Ordem alfabética, mais vendidos, Menor preço, Maior preço, Maior desconto e Mais avaliados - Alta
+RF2.3 - Permitir que o cliente visualize o preço do produto e descontos aplicados - Média
+RF2.4 - Permitir que o cliente visualize as fotos e vídeos dos produtos - Alta
+
+RF3 - Compra de produtos - Alta
+RF3.1 - Permitir que o usuário adicione produtos ao carrinho de compras - Alta
+RF3.2 - Permitir que o cliente ao escolher o produto defina: Tamanho, cor, quantidades, além de visualizar valor do produto e estimativa de frete - Alta
+RF3.3 - Permitir o cálculo autómatico do valor de frete em compras abaixo de R$200,00 - Alta
+RF3.4 - Permitir que o cliente selecione a opção de frete grátis em compras a partir de R$200,01- Alta
+RF3.5 - Permitir que o cliente realize a troca do produto em até 7 dias após a entrega - Alta
+RF3.6 - Permitir que o cliente realize a devolução do produto em até 7 dias após a entrega caso tenha algum problema, sendo assim, o frete será custeado pela empresa - Alta
+RF3.7 - Permitir que o cliente visualize qual o status de envio do pedido após a compra - Alta
+RF3.8 - Permitir que o cliente selecione a forma de pagamento (Pix, cartão de débito ou crédito e boleto) - Alta
+
+RF4 - Admin (Back-End) - Alta
+RF4.1 - Permitir que administradores realizem alterações no catálogo dos produtos (Quantidades disponíveis, preço, opções de tamanho e cor) - Alta
+RF4.2 - Bloquear compras de produtos que estejam com número 0 em estoque - Alta
+RF4.3 - Gerenciar o sistema de descontos e promoções. - Alta
+RF4.4 - Bloquear a utilização de cupons já utilizados em compras anteriores pelo mesmo usuário - Alta
+RF4.5 - Permitir que administradores realizem o cancelamento de uma compra em caso de problemas - Alta
+RF4.6 - Permitir que administradores realizem alterações nas fotos e vídeos dos produtos - Alta
+
+Requisitos Não Funcionais
+
+RNF1 - Usabilidade e Experiência do cliente - Alta
+RNF1.1 - A interface do usuário deve ser intuitiva, moderna e refletir branding da marca - Alta
+RNF1.2 - O site deve ser fácil de navegar, com fluxos claros e mínimos cliques para realizar as principais ações. - Alta
+
+RNF2 - Desempenho - Alta
+RNF2.1 - O tempo de carregamento de telas e funcionalidades não deve exceder 3 segundos em condições de rede normais. - Alta
+RNF2.2 - A resposta às interações do usuário deve ser praticamente instantânea. - Alta
+
+RNF3 - Segurança - Alta
+RNF3.1 - Os dados do usuário, especialmente endereço e CPF, devem ser criptografados e armazenados de forma segura. - Alta
+RNF3.2 - Proteger contra acessos não autorizados e vazamento de dados. - Alta
+RNF3.3 - Assegurar a conformidade com as leis de proteção de dados (e.g., LGPD no Brasil). - 
+
+RNF4 - Confiabilidade - Alta
+RNF4.1 - O site deve estar disponível 99,9% do tempo, exceto em períodos de manutenção programada. - Alta
+RNF4.2 - Em caso de falha, o sistema deve ser capaz de se recuperar rapidamente e minimizar a perda de dados. - Alta
+
+RNF5 - Compatibilidade - Alta
+RNF5.1 - O site deve funcionar em todas as plataformas, tanto computadores/laptops, quanto em mobile - Alta
+RNF5.2 - Deve funcionar bem em diferentes tamanhos de tela e resoluções de dispositivos móveis. - Alta
+
+RNF6 - Manutenibilidade - Alta
+RNF6.1 - O sistema deve ser projetado para permitir a fácil adição de novos produtos - Média
+
+RNF7 - Escalabilidade - Alta
+RNF7.1 - O sistema deve ser capaz de suportar um aumento significativo no número de usuários e produtos sem degradação do desempenho. - Alta
+RNF7.2 - A arquitetura do banco de dados deve ser escalável para acomodar o crescimento dos dados de transações e usuários. - Alta
+
+Regras de Negócios
+
+RN1 - Regra de Integridade dos Dados - Alta
+RN1.1 - Todas as transações de compra registradas devem ter um identificador único e ser rastreáveis. - Alta
+
+RN2 - Regra de Elegibilidade do Usuário - Alta
+RN2.1 - Os seguintes itens devem ter o preenchimento obrigatório: Nome completo, CPF, Email, Telefone (Celular), Endereço, CEP, Cidade, Estado e bairro. - Alta
+
+RN
